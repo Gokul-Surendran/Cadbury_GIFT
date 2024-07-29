@@ -1,7 +1,14 @@
 .cg-footer {
   background-color:#ffffff;
-  padding: 40px 0;
-
+  &__top{
+    background-color:#4B0983;
+    overflow: hidden;
+    text-align: right;
+    img{
+      width: 15%;
+      transform: translate(-170px, 0px);
+    }
+  }
   &__list{
     margin: 0px;
     padding: 0px;
@@ -21,6 +28,7 @@
   &__outer {
     width: 90%;
     margin: 0px auto;
+    padding: 30px 0 0;
     .accordion-item {
       background-color: transparent;
       border: 0;
@@ -85,7 +93,7 @@
       width: 90%;
       margin: 0px auto;
       border-top: 1px solid #4B0983;
-      padding-top: 20px;
+      padding: 20px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -136,6 +144,14 @@
     padding: 0px 0;
     .content-wrapper{
       padding: 0px;
+    }
+    &__top{
+      text-align: center;
+      img{
+        width: 45%;
+        transform: translate(0px, 34px);
+        margin-top: -40px;
+      }
     }
     &__outer {
       width: auto;
