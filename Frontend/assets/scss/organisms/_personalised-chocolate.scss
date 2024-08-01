@@ -1,0 +1,10 @@
+
+@include mobile{
+    .cg-PCT{
+        &.cg-cBox{
+            .cg-cBox__body{
+                padding: 30px 15px 30px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.cg-btn{
+    color: #4B0983;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    min-width: 220px;
+    background: transparent linear-gradient(110deg, #F1CD76 0%, #FFECB2 24%, #D0A651 67%, #F1CD76 100%) 0% 0% no-repeat padding-box;
+    padding: 8px 0;
+    text-align: center;
+    .action.primary{
+        background: none !important;
+        border: none !important;
+        color: #4B0983;
+        &:hover{
+            box-shadow: none !important;
+        }
+    }
+}
+@include mobile{
+    .cg-btn{
+        margin: 0px auto !important;
+        display: block !important;
+        width: 80%;
+    }
+}
