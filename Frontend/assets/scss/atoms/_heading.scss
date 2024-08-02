@@ -1,0 +1,50 @@
+.cg-heading{
+    &__text{
+        color: #4B0983;
+        font-size: 40px;
+        margin: 0px;
+        &--inv{
+            color: #ffffff;
+        }
+        &--yello{
+            color: #F1CD76;
+        }
+    }
+    &__lines{
+        background: transparent linear-gradient(108deg, #F1CD76 0%, #FFECB2 30%, #D0A651 58%, #F1CD76 100%) 0% 0% no-repeat padding-box;
+        font-size: 14px;
+        position: relative;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline;
+        margin: 0 0 15px;
+        text-transform: uppercase;
+        &::before, &::after{
+            background: transparent linear-gradient(108deg, #F1CD76 0%, #FFECB2 30%, #D0A651 58%, #F1CD76 100%) 0% 0% no-repeat padding-box;
+            height: 2px;
+            width: 100%;
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+        &::before{
+            top: -4px;
+        }
+        &::after{
+            bottom: -4px;
+        }
+    }
+}
+// @include tablet{
+//     &__text{
+//         color: #4B0983;
+//         font-size: 30px;
+//     }
+// }
+// @include mobile{
+//     &__text{
+//         color: #4B0983;
+//         font-size: 18px;
+//     }
+// }

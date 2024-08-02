@@ -1,0 +1,242 @@
+.cg-footer {
+  background-color:#ffffff;
+  &__top{
+    background-color:#4B0983;
+    overflow: hidden;
+    text-align: right;
+    img{
+      width: 15%;
+      transform: translate(-170px, 0px);
+    }
+  }
+  &__list{
+    margin: 0px;
+    padding: 0px;
+    &-item{
+      display: flex;
+      color: #000;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+    &-link{
+      color: #000;
+      font-size: 14px;
+    }
+
+  }
+  &__outer {
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0 0;
+    .accordion-item {
+      background-color: transparent;
+      border: 0;
+      width: 20%;
+      margin: 0;
+    }
+
+    .accordion-body {
+      padding: 0px 0;
+    }
+
+    .accordion-button:focus {
+      // border: 0;
+      box-shadow: none;
+    }
+
+    .accordion-header {
+      position: relative;
+      margin: 0px;
+    }
+
+    .accordion-button {
+      background-color: transparent;
+      padding: 0 !important;
+      color: #4B0983;
+      padding-bottom: 16px !important;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .accordion {
+      display: flex;
+      justify-content: space-between;
+    }
+    .accordion__mid{
+      width: 35%;
+      .cg-footer__list-item{
+        &:last-child{
+          margin-top: 10px !important;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .accordion-button {
+      padding-bottom: 15px !important;
+      box-shadow: none;
+      pointer-events: none;
+      font-size: 18px;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__last{
+    width: 100%;
+    margin: 30px 0 0px auto;
+    &-in{
+      width: 90%;
+      margin: 0px auto;
+      border-top: 1px solid #4B0983;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-paymt{
+      &-head{
+        display: none;
+      }
+      &-icns{
+        display: flex;
+        align-items: center;
+        img{
+          max-height: 35px !important;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include tablet-pro {
+  .cg-footer {
+    &__outer {
+      .accordion-button:not(.collapsed) {
+        min-height: 60px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .cg-footer {
+
+    &__outer {
+      .accordion-item {
+        width: 25%;
+      }
+
+      .accordion-button {
+        min-height: 60px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .cg-footer {
+    padding: 0px 0;
+    .content-wrapper{
+      padding: 0px;
+    }
+    &__top{
+      text-align: center;
+      img{
+        width: 45%;
+        transform: translate(0px, 34px);
+        margin-top: -40px;
+      }
+    }
+    &__outer {
+      width: auto;
+      margin: 0 0px;
+
+      .accordion {
+        display: block;
+        button:not(.disabled):not([disabled]):hover{
+          box-shadow: none !important;
+        }
+      }
+
+      .accordion-item {
+        width: 100%;
+        margin: 0;
+      }
+
+      .accordion-button {
+        font-size: 22px;
+        // margin-bottom: 10px;
+        pointer-events: all;
+        border-bottom: 1px solid #000;
+        padding: 15px 15px !important;
+
+        &::after {
+          display: block;
+          background-image: url(../../images/Strat/plus-icn.png);
+          background-position: top right;
+        }
+      }
+
+      .accordion-button[aria-expanded="true"] {
+        pointer-events: fill;
+        margin-bottom: 10px;
+        padding: 15px 15px!important;
+        border: none;
+
+        &::after {
+          // transform: none;
+          display: block;
+          border: none;
+          background-image: url(../../images/Strat/minus-icn.png);
+          background-position: top 5.5px right;
+          // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+        }
+      }
+
+      .accordion-body {
+        padding: 0 15px 15px;
+        // margin-bottom: 35px;
+        border-bottom: 1px solid #000;
+      }
+    }
+    &__last{
+      margin-top: 0;
+      &-in{
+        border-top: 0px solid #4B0983;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      &-paymt{
+        &-head{
+          display: block;
+          color: #4B0983;
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+          text-align: center;
+          line-height: 1;
+          img{
+            width: 12px;
+            margin-right: 10px;
+            margin-top: -5px;
+          }
+        }
+        &-icns{
+          margin-bottom: 15px;
+          img{
+            max-height: 30px !important;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
