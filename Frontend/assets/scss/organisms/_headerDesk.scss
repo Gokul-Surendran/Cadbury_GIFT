@@ -6,6 +6,10 @@
     display: flex;
     align-items: center;
     &-drop{
+      margin-right: 24px;
+      &:last-child {
+        margin-right: 0;
+      }
       &::after{
         position: absolute;
         content: "";
