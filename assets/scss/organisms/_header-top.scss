@@ -1,5 +1,11 @@
 .cg-headerTop {
   background-color: #4b0983;
+  &__hambmenu {
+    display: none;
+    img {
+      width: 26px;
+    }
+  }
   &__txt {
     color: #fff;
     text-align: center;
@@ -36,6 +42,14 @@
         font-size: 14px;
       }
     }
+    a {
+      width: 25px;
+      height: 25px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
   &__controls {
     display: flex;
@@ -43,6 +57,9 @@
     width: 25%;
     a {
       margin-right: 24px;
+      img {
+        width: 26px;
+      }
     }
   }
 }
