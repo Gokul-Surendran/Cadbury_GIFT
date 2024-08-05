@@ -46,3 +46,9 @@
     }
   }
 }
+
+@include mobile-tablet {
+  .cg-headerTop {
+    display: none;
+  }
+}
