@@ -1,0 +1,19 @@
+.cd-btn {
+    
+    background-image: linear-gradient(to right,#FEE9AC, #D1A752);
+    font-size: 30px;
+    font-weight: 600; 
+    color: #4B0983;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 30px;
+    &:hover {
+        transition: 0.3s;
+        background-image: linear-gradient(to right, #D1A752, #FEE9AC);
+        color: #4B0983;
+    }
+}

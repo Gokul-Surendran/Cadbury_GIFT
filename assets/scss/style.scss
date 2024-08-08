@@ -8,13 +8,15 @@
 @import "./base/dev";
 
 // atoms
-@import 'atoms/btn';
 @import 'atoms/headings';
+@import 'atoms/gradient-btn';
 // molecule
 @import 'molecules/test-card';
+@import 'molecules/banner-tile';
 // organisms
 @import 'organisms/header';
 @import 'organisms/header-top';
 @import 'organisms/footer';
 @import 'organisms/header-mob';
+@import 'organisms/banner';
 // pages

@@ -1,35 +1,35 @@
-// const hambergicon = document.querySelector(".cd-mobmenu__menuicon");
-// const menu1 = document.querySelector(".cd-mobmenu__menu1");
-// const menuclose = document.querySelector(".cd-mobmenu__close");
-// const menulistbtn1 = document.querySelectorAll(".cd-mobmenu__item1");
-// const menulist2 = document.querySelectorAll(".cd-mobmenu__item1-menu");
-// const back1 = document.querySelectorAll(".cd-mobmenu__back1");
-
-// // home menu
-// hambergicon.addEventListener("click", () => {
-//   menu1.classList.add("active");
-// });
-
-// // close menu
-// menuclose.addEventListener("click", () => {
-//   menu1.classList.remove("active");
-// });
-
-// // 1st list show
-// menulistbtn1.forEach((item2, index) => {
-//   item2.addEventListener("click", () => {
-//     menulist2.forEach((mlist2, index) => {
-//       mlist2.classList.add("active");
-//       back1.forEach((backone, index) => {
-//         backone.addEventListener("click", () => {
-//           if (mlist2.classList.contains("active")) {
-//             mlist2.classList.remove("active");
-//           }
-//         });
-//       });
-//     });
-//   });
-// });
+// main banner slider
+$(".main-banner").slick({
+  dots: false,
+  infinite: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  infinite: true,
+  autoplay: true,
+  // autoplaySpeed: 2000,
+  speed: 500,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
+});
 
 const hambergicon = document.querySelector(".cd-mobmenu__menuicon");
 const menu1 = document.querySelector(".cd-mobmenu__menu1");
