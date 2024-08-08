@@ -28,6 +28,7 @@ const menuIcon = document.getElementById('cg-HamburgerMenu');
 const closeIcon = document.getElementById('cg-closeIcon');
 const menu = document.getElementById('cg-mobMenu');
 const submenus = document.querySelectorAll('.cg-menuList__mainItems');
+const submenusLONE = document.querySelectorAll('.cg-menuList__submenu');
 const submenuLinks = document.querySelectorAll('.cg-menuList__hasSubmenu');
 const backLinks = document.querySelectorAll('.cg-menuList__bacLink');
 
@@ -49,7 +50,7 @@ closeIcon.addEventListener('click', function () {
   closeIcon.style.display = 'none';
   menuIcon.style.display = 'block';
   // Hide all submenus
-  submenus.forEach(submenu => {
+  submenusLONE.forEach(submenu => {
     submenu.classList.remove('active');
      submenu.style.right = '-100%';
   });
