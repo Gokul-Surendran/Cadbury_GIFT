@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- styles -->
+    <!-- <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/slick-theme.css"> -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- styles -->
+    <title>Mobile Menu</title>
+</head>
+
+<body>
+    <!-- body content start -->
+     <div class="cg-mobNav">
+        <div class="cg-mobNav__top">Order before 4pm for next day delivery</div>
+        <div class="cg-mobNav__in">
+            <div class="cg-mobNav__hamb">
+                <div id="cg-HamburgerMenu">
+                    <img src="../assets/images/hamburger-icon.svg">
+                </div>
+            </div>
+            <div class="cg-mobNav__logo">
+                <img src="../assets/images/mob-logo.svg">
+            </div>
+            <div class="cg-mobNav__right">
+                <div class="cg-mobNav__search"><img src="../assets/images/search.svg"></div>
+                <div class="cg-mobNav__cart"><img src="../assets/images/cart.svg"></div>
+            </div>
+            <div id="cg-mobMenu" class="cg-menuList__mainItems">
+                <div class="cg-mobMenu__header">
+                    <div class="cg-mobMenu__logo">
+                        <img src="../assets/images/mob-logo.svg">
+                    </div>
+                    <div class="cg-mobMenu__search">
+                        <img src="../assets/images/search.svg"> <input type="text" placeholder="Search">
+                    </div>
+                </div>
+                <div id="cg-closeIcon" class="cg-mobMenu__closeIcon" style="display:none;"><img src="../assets/images/close-btn.png"></div>
+                <ul class="cg-menuList">
+                    <li><a href="#">Chocolate Hampers</a></li>
+                    <li>
+                        <a href="#" class="cg-menuList__hasSubmenu" data-target="submenu1">Gift Ideas</a>
+                        <ul id="submenu1" class="cg-menuList__submenu">
+                            <li class="submenu-header">
+                                <a href="#" class="cg-menuList__bacLink" data-parent="menu">Menu</a>
+                            </li>
+                            <li class="cg-menuList__heading">Gift Ideas</li>
+                            <li><a href="#" class="cg-menuList__hasSubmenu" data-target="submenu2">Shop by Occasion</a>
+                                <ul id="submenu2" class="cg-menuList__submenu">
+                                    <li class="submenu-header">
+                                        <a href="#" class="cg-menuList__bacLink" data-parent="menu">Gift Ideas</a>
+                                    </li>
+                                    <li class="cg-menuList__heading">Shop by Occasion</li>
+                                    <li><a href="#">Best Selling Chocolate Gifts</a></li>
+                                    <li><a href="#">What's New</a></li>
+                                    <li><a href="#">Birthday Gifts</a></li>
+                                    <li><a href="#">Personalised Birthday Bars</a></li>
+                                    <li><a href="#">Congratulations Gifts</a></li>
+                                    <li><a href="#">Father's Day Gifts & Hampers</a></li>
+                                    <li><a href="#">Christmas Chocolate Gifts</a></li>
+                                    <li><a href="#">Chocolate Hampers for Christmas</a></li>
+                                    <li><a href="#">Teacher Thank You Gifts</a></li>
+                                    <li><a href="#">Thank You Gifts</a></li>
+                                    <li><a href="#">Thinking Of You Chocolate Gifts</a></li>
+                                    <li><a href="#">Get Well Soon Gifts</a></li>
+                                    <li><a href="#">Halloween Sweets</a></li>
+                                    <li><a href="#">Anniversary Gifts</a></li>
+                                    <li><a href="#">Wedding Gifts</a></li>
+                                    <li><a href="#">Retirement Gifts</a></li>
+                                    <li><a href="#">Well Done Gifts</a></li>
+                                    <li><a href="#">Easter Egg Gifts & Hampers</a></li>
+                                    <li><a href="#">Mother's Day Chocolates</a></li>
+                                    <li><a href="#">Valentine's Chocolates</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="cg-menuList__hasSubmenu" data-target="submenu2">Shop by Recipient</a>
+                                 <ul id="submenu2" class="cg-menuList__submenu">
+                                    <li class="submenu-header">
+                                        <a href="#" class="cg-menuList__bacLink" data-parent="menu">Gift Ideas</a>
+                                    </li>
+                                    <li class="cg-menuList__heading">Shop by Occasion</li>
+                                    <li><a href="#">Best Selling Chocolate Gifts</a></li>
+                                    <li><a href="#">What's New</a></li>
+                                    <li><a href="#">Birthday Gifts</a></li>
+                                    <li><a href="#">Personalised Birthday Bars</a></li>
+                                    <li><a href="#">Congratulations Gifts</a></li>
+                                    <li><a href="#">Father's Day Gifts & Hampers</a></li>
+                                    <li><a href="#">Christmas Chocolate Gifts</a></li>
+                                    <li><a href="#">Chocolate Hampers for Christmas</a></li>
+                                    <li><a href="#">Teacher Thank You Gifts</a></li>
+                                    <li><a href="#">Thank You Gifts</a></li>
+                                    <li><a href="#">Thinking Of You Chocolate Gifts</a></li>
+                                    <li><a href="#">Get Well Soon Gifts</a></li>
+                                    <li><a href="#">Halloween Sweets</a></li>
+                                    <li><a href="#">Anniversary Gifts</a></li>
+                                    <li><a href="#">Wedding Gifts</a></li>
+                                    <li><a href="#">Retirement Gifts</a></li>
+                                    <li><a href="#">Well Done Gifts</a></li>
+                                    <li><a href="#">Easter Egg Gifts & Hampers</a></li>
+                                    <li><a href="#">Mother's Day Chocolates</a></li>
+                                    <li><a href="#">Valentine's Chocolates</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="cg-menuList__hasSubmenu">Shop by Budget</a></li>
+                            <li class="cg-menuList__additional">
+                                <ul>
+                                    <li><a href="">Looking for Inspiration?</a></li>
+                                    <li><a href="">Sale</a></li>
+                                    <li><a href="">View All Products</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="cg-menuList__hasSubmenu">Inspire</a></li>
+                    <li><a href="#" class="cg-menuList__hasSubmenu">Our Product Range</a></li>
+                    <li><a href="#" class="cg-menuList__hasSubmenu">Make Your Own</a></li>
+                    <li><a href="#" >Corporate Gifts</a></li>
+                </ul>
+             </div>
+        </div>
+     </div>
+
+    <!-- body content end -->
+    <!-- scripts -->
+    <script src="../assets/js/jquery.slim.min.js"></script>
+    <!-- <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/slick.min.js"></script> -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <!-- scripts -->
+  </body>
+</html>
